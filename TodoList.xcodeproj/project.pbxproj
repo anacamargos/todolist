@@ -12,6 +12,9 @@
 		BF18B9B6226B8969009D370E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF18B9B4226B8969009D370E /* Main.storyboard */; };
 		BF18B9B8226B896B009D370E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF18B9B7226B896B009D370E /* Assets.xcassets */; };
 		BF18B9BB226B896B009D370E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF18B9B9226B896B009D370E /* LaunchScreen.storyboard */; };
+		BF18B9C3226B8A46009D370E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18B9C2226B8A46009D370E /* Task.swift */; };
+		BF18B9C5226B8A68009D370E /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18B9C4226B8A68009D370E /* Project.swift */; };
+		BF18B9C7226B8A8F009D370E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18B9C6226B8A8F009D370E /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BF18B9B7226B896B009D370E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF18B9BA226B896B009D370E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF18B9BC226B896B009D370E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF18B9C2226B8A46009D370E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		BF18B9C4226B8A68009D370E /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		BF18B9C6226B8A8F009D370E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,19 @@
 				BF18B9B7226B896B009D370E /* Assets.xcassets */,
 				BF18B9B9226B896B009D370E /* LaunchScreen.storyboard */,
 				BF18B9BC226B896B009D370E /* Info.plist */,
+				BF18B9C8226B8A9A009D370E /* Model */,
 			);
 			path = TodoList;
+			sourceTree = "<group>";
+		};
+		BF18B9C8226B8A9A009D370E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF18B9C2226B8A46009D370E /* Task.swift */,
+				BF18B9C4226B8A68009D370E /* Project.swift */,
+				BF18B9C6226B8A8F009D370E /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF18B9C7226B8A8F009D370E /* DataModel.swift in Sources */,
 				BF18B9B3226B8969009D370E /* ViewController.swift in Sources */,
+				BF18B9C3226B8A46009D370E /* Task.swift in Sources */,
 				BF18B9B1226B8969009D370E /* AppDelegate.swift in Sources */,
+				BF18B9C5226B8A68009D370E /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR4HDJL2Y8;
 				INFOPLIST_FILE = TodoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR4HDJL2Y8;
 				INFOPLIST_FILE = TodoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
